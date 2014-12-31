@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+
+<body>
+  <h1>Creating objects</h1>
+  <p id="fullname"></p>
+  <button id="button" onmouseover="this.innerHTML=Date()">The date is</button>
+  <p id="date"></p>
+
+<script>
+  var person =
+  {
+    firstName: "Vijay",
+    lastName: "Kumar",
+    fullName: function() {return this.firstName + " " + this.lastName}
+  };
+
+  document.getElementById("fullname").innerHTML = person.fullName();
+  document.getElementById("button").innerHTML = Date();
+</script>
+</body>
+
+
+<html>
+
+
+<!--
+function name(param1, ...)
+{
+}
+
+x = min(3,4);
+text = "text" + toCelsius(32);
+
+carName = "BMW"  //globa variable
+window.carname   //all global variables belong to that
+
+var x = 9999999999;
+var x = 0.2 + 0.3;
+var x = (0.2 * 10) / 10;
+var x = 0xFF;
+mynumber.toString(16)    //returns mynumber in base 16
+
+while (number != Infinity)
+
+NaN(not a number)
+isNaN(x)
+
+var x = Number.MAX_VALUE;
+
+
+
+-->

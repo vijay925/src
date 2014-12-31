@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <p>Enter an input between 1 and 10.</p>
+  <input id="number" type="text">
+  <button type="button" onclick="validate()">Submit</button>
+  <p id="output"></p>
+  <p>Today's date is:</p>
+  <button type="button" onclick="printDate()">Date</button>
+  <p id="date"></p>
+
+  <script type="text/javascript">
+  function validate()
+  {
+    var x = document.getElementById("number").value;
+
+    if(isNaN(x) || x < 1 || x > 10)
+      text = "Input not valid";
+    else
+      text = "Input is valid";
+    document.getElementById("output").innerHTML = text;
+  }
+  function printDate()
+  {
+    var x = 10;
+    document.getElementById("date").innerHTML = Date();
+    console.log(x);
+  }
+  </script>
+
+</body>
+
+</html>
+
+<!--
+var person = {firstname: "Vijay", lastname: "Kumar", age: 50, eyecolor: "blue"}    ->>>> object
+var scores = [1,2,3,4,5]   ->>>> array
+function(a, b) {return 0}
+
+a = 8; b = 10;
+var x = true;
+var x = null;
+typeof "This"
+
+data types ending
+
+var person =
+{
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};
+
+person.lastName;
+person["lastName"];
+
+objectName.methodName()
+
+
+-->
+
+
+

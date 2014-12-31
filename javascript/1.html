@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Scripting</title>
+
+	<!-- comment -->
+	<script type="text/javascript">
+	document.write("Hello world <br>");
+	document.write("I'm learning Javascript <br>");
+
+	function myFunction()
+	{
+		document.getElementById("name").innerHTML = "Vijay";
+	}
+	//changes the text if bulb is turned on as well as the picture
+	function changeBulb()
+	{
+		var heading = document.getElementById("h2");
+		var image = document.getElementById("bulb");
+		if(heading.innerHTML.match("Bulb off")) //if bulb off turn it on
+		{
+			//change_h2();
+			heading.innerHTML = "Bulb on";
+			image.src = "on.gif";
+		}
+		else
+		{
+			heading.innerHTML = "Bulb off";
+			image.src = "off.gif";
+		}
+	}
+
+	function change_h2()
+	{
+		var heading = document.getElementById("h2");
+		heading.style.fontSize = "50px";
+	}
+	</script>
+</head>
+
+<body>
+	<br>
+	<button type="button" onclick="myFunction()">Click for my name</button>
+	<p id="name"></p>
+	<h2 id="h2">Bulb off</h2>
+
+	<img id="bulb"src="off.gif" onclick="changeBulb()" alt="davis logo" height="240" width="150">
+</body>
+
+
+
+</html>
+
